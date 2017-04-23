@@ -19,7 +19,7 @@ from Python2Parser       import Python2Parser
 from Python2Lexer        import Python2Lexer
 from Python2Listener     import Python2Listener
 
-regex = re.compile(r"-*-\s+coding:\s+([\w-]+)\s+-*-")
+regex = re.compile(r"-\*-\s+coding:\s+([\w-]+)\s+-\*-")
 get_encoding = regex.findall
 
 def main(argv):
